@@ -1,0 +1,62 @@
+html {
+	padding: 0rem;
+	margin: 0rem;
+}
+
+body {
+	background-size: auto;
+}
+
+.blog-icon {
+	display: inline-block;
+}
+
+.blog-icon img {
+	margin: 1.25rem 2rem;
+	width: 1.5625rem;
+	height: 1.5625rem;
+}
+
+.blog-icon img:hover {
+	opacity: 50%;
+	cursor: pointer;
+}
+
+.flex-box1 {
+	display: flex;
+	height: 37.5rem;
+	width: 75%;
+	justify-content: space-around;
+	margin: 0.25rem 11.25rem;
+}
+
+.my-description {
+	align-self: center;
+	justify-content: center;
+	font-family: Consolas, serif;
+}
+
+.large-words {
+	font-size: 4rem;
+	display: block;
+}
+
+.small-words {
+	font-size: 2.5rem;
+}
+
+.little-image1 {
+	background-image: url(../image/me.jpg);
+	background-size: cover;
+	width: 20rem;
+	height: 30rem;
+	align-self: flex-end;
+}
+
+.little-image2 {
+	background-image: url(../image/me.jpg);
+	background-size: cover;
+	width: 20rem;
+	height: 30rem;
+	align-self: flex-start;
+}

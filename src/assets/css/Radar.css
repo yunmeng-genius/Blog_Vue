@@ -1,0 +1,28 @@
+
+.radar {
+	margin-top: 5rem;
+}
+
+
+
+.statement {
+	font-family: Consolas, serif;
+	display: flex;
+	flex-direction: column;
+}
+
+.large-statement{
+	font-size: 3rem;
+	align-self: center;
+	justify-content: center;
+}
+.small-statement {
+	font-size: 2rem;
+	align-self: center;
+	justify-content: center;
+}
+
+#echarts-radar {
+	width: 25%;
+	height: 12.5rem;
+}
