@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+	float: left;
+	width: 30px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	color: rgba(255, 255, 255, .8);
+	font-size: 14px;
+}
+
+.banner {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 60px;
+}
+
+.banner img {
+	width: 100%;
+	display: block;
+}
+
+.banner .page {
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.banner .page ul {
+	float: right;
+}
+
+.current {
+	color: #ff6700;
+}

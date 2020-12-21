@@ -7,17 +7,16 @@
 			</span>
 		</div>
 		<div id="echarts-radar">
-
 		</div>
 	</div>
 </template>
 
 <script>
-	import echarts from 'echarts'
-	
+	import * as echarts from 'echarts'
+
 	export default {
 		name: 'Radar',
-		mounted(){
+		mounted() {
 			this.$nextTick(function() {
 				this.drawPie('echarts-radar')
 			})
@@ -26,49 +25,39 @@
 			drawPie() {
 				var charts = echarts.init(document.getElementById('echarts-radar'))
 				var option = {
-					title: {
-						text: "这个是测试",
-						link: 'https://www.baidu.com',
-						target: "blank",
-						textAlign: 'left',
-
-					},
-					tooltip: {}, //提示层
 					legend: {
-						data: ['name1']
+						data: ["Allocated Budget", "Actual Spending"]
 					},
 					radar: {
-						name: {
-							textStyle: {
-								color: '#fff', //字体颜色
-								backgroundColor: '#999', //背景色
-								borderRadius: 3, //圆角
-								padding: [3, 5] //padding
-							}
-						},
-						center: ['50%', '50%'],
-						radius: '60%',
-						startAngle: 270,
 						indicator: [{
-								name: '指标一',
-								max: 600
-							},
-							{
-								name: '指标二',
-								max: 600
-							},
-							{
-								name: '指标三',
-								max: 600
-							}
-						],
+							name: "sales",
+							max: 6500
+						}, {
+							name: "Administration",
+							max: 16000
+						}, {
+							name: "Information Techology",
+							max: 30000
+						}, {
+							name: "Customer Support",
+							max: 38000
+						}, {
+							name: "Development",
+							max: 52000
+						}, {
+							name: "Marketing",
+							max: 25000
+						}]
 					},
 					series: [{
-						name: '测试标题名字',
-						type: 'radar',
+						// name: "预算 vs 开销（Budget vs spending）",
+						type: "radar",
 						data: [{
-							value: [400, 200, 20],
-							name: "123"
+							value: [4300, 10000, 28000, 35000, 50000, 19000],
+							name: "Allocated Budget"
+						}, {
+							value: [5000, 14000, 28000, 31000, 42000, 21000],
+							name: "Actual Spending"
 						}]
 					}]
 				}

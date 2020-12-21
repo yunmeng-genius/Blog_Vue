@@ -1,7 +1,7 @@
 <template>
 	<div class="about">
 		<div class="blog-icon">
-			<img src="@/assets/image/more.png" alt="">
+			<router-link to="/blog"><img src="@/assets/image/more.png" alt=""></router-link>
 		</div>
 		<div class="flex-box1">
 			<div class="little-image1"></div>
