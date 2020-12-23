@@ -3,6 +3,9 @@
 		<Introduction></Introduction>
 		<Radar></Radar>
 		<Third></Third>
+		<el-backtop>
+			<div>UP</div>
+		</el-backtop>
 	</div>
 </template>
 
@@ -20,3 +23,8 @@
 		}
 	}
 </script>
+
+<style>
+	@import url("//unpkg.com/element-ui@2.14.1/lib/theme-chalk/index.css");
+	@import url("../assets/css/up.css");
+</style>
